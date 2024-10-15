@@ -1,0 +1,161 @@
+/*Estilo global*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F2E7DC;
+    color: #027373;
+    margin: 0;  
+    padding: 0;
+    height: 100%;
+}
+
+/*Encabezado*/
+header{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: large;
+    background-color: #038C7F;
+    padding: 2px;
+}
+
+.titulo{
+    font-size: 3em;
+    color: #0D0D0D;
+}
+
+/*Barra de Navegación*/
+
+.nav{
+    background-color: #A9D9D0;
+    padding: 10px;
+    box-shadow: 2px;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav li{
+    margin: 10px;
+}
+
+.nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.nav a:hover{
+    background-color: #F2E7DC;
+    transform: scale(1.1);
+}
+
+/*configuracion del logo de la empresa*/
+
+.logoemp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    
+}
+
+.centrado{
+    width: 300px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 25%;
+}
+
+/*centrado eslogan*/
+
+.eslogan{
+    text-align: center;
+}
+
+/*textos*/
+
+.mision{
+    color: #0D0D0D;
+}
+
+.mision h2{
+    color: #027373;
+}
+
+.vision{
+    color: #0D0D0D;
+}
+
+.vision h2{
+    color: #027373;
+}
+
+.anteslogos{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/*transición de logos*/
+.banner {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 20px;
+    background-color: #F2E7DC;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.banner img {
+    max-width: 150px; 
+    margin: 0 20px; 
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; 
+        animation: none;
+    }
+    .banner img {
+        margin-bottom: 15px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+/*Estilos del Footer*/
+footer{
+    background-color: #038C7F;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a{
+    color: #007bff
+}
+
+footer p{
+    margin: 5px 0;
+}
+
+footer a :hover{
+    text-decoration: underline
+}
