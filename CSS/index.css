@@ -1,12 +1,7 @@
 
 /* Hero section (Logo y eslogan) */
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-    background-color: #F2E7DC;
+    background-image: url('https://images.pexels.com/photos/8439697/pexels-photo-8439697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
 }
 
 .logo {
@@ -19,13 +14,10 @@
 }
 
 .eslogan {
-    font-size: 1.5em;
-    color: transparent; /* Color del texto transparente para que el degradado se vea */
-    background-image: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4); /* Degradado en los colores que prefieras */
-    background-clip: text;
-    -webkit-background-clip: text; /* Necesario para compatibilidad con Webkit (Chrome, Safari) */
-    margin-top: 20px;
-    text-align: center;}
+    color: maroon;
+    font-size: 1.6em; /* Ajusta el tamaño del texto del párrafo */
+    font-weight: bold;
+}
 
 /* Misión y Visión */
 section {
@@ -124,3 +116,9 @@ section {
     }
 }
 
+.titulo {
+    color: #027373;;
+    font-size: 2.5em; /* Puedes ajustar el tamaño según tu preferencia */
+    margin-bottom: 10px; /* Espacio entre el h2 y el párrafo */
+    margin-top: 250px; 
+}

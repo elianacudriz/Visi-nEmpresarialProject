@@ -14,12 +14,6 @@ header {
     padding: 10px 0;
 }
 
-.titulo {
-    font-size: 2em;
-    margin-bottom: 5px;
-    color: #027373;
-    padding: 50px;
-}
 
 /* Barra de navegación con logo */
 .nav {
@@ -80,3 +74,17 @@ footer {
 footer p {
     margin: 0;
 }
+
+.hero {
+
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    padding: 50px; /* Añade espacio alrededor del contenido */
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centrar el texto */
+    background-position: center top; /* Coloca la imagen centrada horizontalmente, pero anclada arriba */
+    height: 450px;
+    padding-top: 50px; /* Espacio en la parte superior */
+    padding-bottom: 100px; 
+}
+

@@ -1,15 +1,24 @@
 
 .hero {
-    text-align: center;
-    background-color: #A9D9D0;
-    padding: 50px 0;
-    color: #027373;
+    background-image: url('https://images.pexels.com/photos/8866776/pexels-photo-8866776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
+
 }
 
-.hero h2 {
-    font-size: 2.5em;
+/* Estilos para el título h2 */
+.titulo {
+    font-size: 2.5em; /* Ajusta el tamaño del título */
+    margin-top: 250px; 
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    color: maroon;
 }
 
+/* Estilos para el párrafo */
+.parrafo {
+    font-size: 1.2em; /* Ajusta el tamaño del texto del párrafo */
+    margin-top: 30px; /* Espacio superior para separar el texto del título */
+    color: #038C7F;
+    font-weight: bold;
+}
 .services {
     display: flex;
     flex-wrap: wrap;
