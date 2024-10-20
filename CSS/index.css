@@ -1,109 +1,111 @@
-/*Estilo global*/
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* Estilo global */
+body {
+    font-family: 'Verdana', sans-serif;
     background-color: #F2E7DC;
     color: #027373;
-    margin: 0;  
+    margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/*Encabezado*/
-header{
+header {
     text-align: center;
-    margin-bottom: 0;
-    font-size: large;
     background-color: #038C7F;
-    padding: 2px;
+    padding: 20px 0;
 }
 
-.titulo{
-    font-size: 3em;
-    color: #0D0D0D;
+.titulo {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #fff;
 }
 
-/*Barra de Navegación*/
-
-.nav{
-    background-color: #A9D9D0;
-    padding: 10px;
-    box-shadow: 2px;
+/* Barra de navegación con logo */
+.nav {
+    background-color: rgba(0, 128, 128, 0.5); /* Más transparente */
+    position: fixed;  /* Fija la barra en la parte superior */
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 20px;  /* Ajusta el padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;  /* Coloca la barra por encima del resto del contenido */
+    height: 60px;
 }
 
-.nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Ajustes del logo dentro de la navegación */
+.logo-nav {
+    width: 60Px;  /* Tamaño del logo */
+    height: auto;  /* Mantén el aspecto proporcional del logo */
+    border-radius: 0; /* Quita el borde circular */
+    margin-right: 10px;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+    background-color: transparent; 
+}
+.nav ul {
+    list-style: none;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
 }
 
-.nav li{
-    margin: 10px;
+.nav li {
+    margin: 0 15px;
 }
 
-.nav a{
-    color: black;
+.nav a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.nav a:hover{
-    background-color: #F2E7DC;
-    transform: scale(1.1);
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);  /* Efecto hover con transparencia */
 }
 
-/*configuracion del logo de la empresa*/
-
-.logoemp{
+/* Hero section (Logo y eslogan) */
+.hero {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 45vh;
-    
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #F2E7DC;
 }
 
-.centrado{
-    width: 300px;
-    max-width: 50%;
+.logo {
+    width: 120px;  /* Ajusta el tamaño si es necesario */
     height: auto;
-    border-radius: 25%;
+    position: absolute;
+    top: 10px;  /* Ajusta el espacio desde el borde superior */
+    left: 10px; /* Ajusta el espacio desde el borde izquierdo */
+    border-radius: 50%;
 }
 
-/*centrado eslogan*/
+.eslogan {
+    font-size: 1.5em;
+    color: transparent; /* Color del texto transparente para que el degradado se vea */
+    background-image: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4); /* Degradado en los colores que prefieras */
+    background-clip: text;
+    -webkit-background-clip: text; /* Necesario para compatibilidad con Webkit (Chrome, Safari) */
+    margin-top: 20px;
+    text-align: center;}
 
-.eslogan{
+/* Misión y Visión */
+section {
+    padding: 40px 20px;
     text-align: center;
 }
 
-/*textos*/
-
-.mision{
-    color: #0D0D0D;
-}
-
-.mision h2{
+.mision h2, .vision h2 {
     color: #027373;
 }
 
-.vision{
-    color: #0D0D0D;
-}
-
-.vision h2{
-    color: #027373;
-}
-
-.anteslogos{
-    text-align: center;
-    text-transform: capitalize;
-}
-
-/*transición de logos*/
 .banner {
     display: flex;
     justify-content: flex-start; 
@@ -116,8 +118,16 @@ header{
 }
 
 .banner img {
-    max-width: 150px; 
-    margin: 0 20px; 
+    width: 150px; /* Asegura que las imágenes sean del mismo tamaño */
+    height: 150px; /* Fuerza una altura igual al ancho para mantener la forma circular */
+    border-radius: 50%; /* Esto hace que las imágenes sean circulares */
+    margin: 0 20px;
+    object-fit: cover; /* Para asegurarse de que la imagen no se deforme dentro del círculo */
+    position: relative; /* Necesario para aplicar el degradado */
+    
+    /* Para el degradado */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -139,23 +149,57 @@ header{
     }
 }
 
-/*Estilos del Footer*/
-footer{
+/* Estilos del Footer */
+footer {
     background-color: #038C7F;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
 }
 
-footer a{
-    color: #007bff
+footer p {
+    margin: 0;
+}
+/* Contenedor de Misión y Visión */
+.mision-contenedor, .vision-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 8px rgba(57, 53, 53, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 20px 0;
 }
 
-footer p{
-    margin: 5px 0;
+/* Imágenes de Misión y Visión */
+.mision-contenedor img, .vision-contenedor img {
+    width: 40%; /* Ajusta el tamaño de la imagen */
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
 }
 
-footer a :hover{
-    text-decoration: underline
+/* Texto de Misión y Visión */
+.texto-mision, .texto-vision {
+    width: 55%; /* Ancho del texto */
 }
+
+/* Diseño responsivo: Apilar imagen y texto en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .mision-contenedor, .vision-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mision-contenedor img, .vision-contenedor img {
+        width: 80%; /* Imagen más grande en pantallas pequeñas */
+        margin: 0 0 20px 0; /* Espaciado bajo la imagen */
+    }
+
+    .texto-mision, .texto-vision {
+        width: 100%; /* Texto a ancho completo */
+    }
+}
+
