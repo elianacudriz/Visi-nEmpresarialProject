@@ -1,53 +1,24 @@
-/* Estilo global */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #027373;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav li {
-    margin: 0 15px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.nav a:hover, .nav a.active {
-    background-color: #038C7F;
-}
 
 .hero {
-    text-align: center;
-    background-color: #A9D9D0;
-    padding: 50px 0;
-    color: #027373;
+    background-image: url('https://images.pexels.com/photos/8866776/pexels-photo-8866776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
+
 }
 
-.hero h2 {
-    font-size: 2.5em;
+/* Estilos para el título h2 */
+.titulo {
+    font-size: 2.5em; /* Ajusta el tamaño del título */
+    margin-top: 250px; 
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    color: #0D0D0D;
 }
 
+/* Estilos para el párrafo */
+.parrafo {
+    font-size: 1.2em; /* Ajusta el tamaño del texto del párrafo */
+    margin-top: 30px; /* Espacio superior para separar el texto del título */
+    color: #038C7F;
+    font-weight: bold;
+}
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -77,9 +48,4 @@ header {
     margin-bottom: 15px;
 }
 
-footer {
-    background-color: #027373;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+

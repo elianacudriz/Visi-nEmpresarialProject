@@ -1,0 +1,90 @@
+/* Estilo global */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #F2E7DC;
+    color: #027373;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: #038C7F;
+    padding: 10px 0;
+}
+
+
+/* Barra de navegación con logo */
+.nav {
+    background-color: rgba(0, 128, 128, 0.5); /* Más transparente */
+    position: fixed;  /* Fija la barra en la parte superior */
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 20px;  /* Ajusta el padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;  /* Coloca la barra por encima del resto del contenido */
+    height: 60px;
+}
+
+/* Ajustes del logo dentro de la navegación */
+.logo-nav {
+    width: 110Px;  /* Tamaño del logo */
+    height: auto;  /* Mantén el aspecto proporcional del logo */
+    border-radius: 0; /* Quita el borde circular */
+    margin-right: 10px;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+    background-color: transparent; 
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);  /* Efecto hover con transparencia */
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #038C7F;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.hero {
+
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    padding: 50px; /* Añade espacio alrededor del contenido */
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centrar el texto */
+    background-position: center top; /* Coloca la imagen centrada horizontalmente, pero anclada arriba */
+    height: 450px;
+    padding-top: 50px; /* Espacio en la parte superior */
+    padding-bottom: 100px; 
+}
+
