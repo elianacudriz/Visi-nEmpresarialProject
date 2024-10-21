@@ -17,6 +17,7 @@
     color: maroon;
     font-size: 1.6em; /* Ajusta el tamaño del texto del párrafo */
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7)
 }
 
 /* Misión y Visión */
@@ -120,5 +121,6 @@ section {
     color: #027373;;
     font-size: 2.5em; /* Puedes ajustar el tamaño según tu preferencia */
     margin-bottom: 10px; /* Espacio entre el h2 y el párrafo */
-    margin-top: 250px; 
+    margin-top: 250px;
+    background-color: rgba(255, 255, 255, 0.7) 
 }
