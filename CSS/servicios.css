@@ -1,3 +1,4 @@
+
 .hero {
     background-image: url('https://images.pexels.com/photos/8866776/pexels-photo-8866776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
     background-size: cover;
@@ -39,7 +40,6 @@
     position: relative; 
     padding: 20px;
 }
-
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -91,13 +91,8 @@
     position: relative; 
 }
 
-
 .service-card p{
     z-index: 2; 
     position: relative; 
 }
-
-
-
-
 

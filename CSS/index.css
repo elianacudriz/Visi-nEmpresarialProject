@@ -8,17 +8,6 @@
     height: 300px; 
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1; 
-}
-
 .logo {
     width: 120px;  /* Ajusta el tamaño si es necesario */
     height: auto;
@@ -144,4 +133,10 @@ section {
     }
 }
 
+.titulo {
+    color: #027373;;
+    font-size: 2.5em; /* Puedes ajustar el tamaño según tu preferencia */
+    margin-bottom: 10px; /* Espacio entre el h2 y el párrafo */
+    margin-top: 250px; 
+}
 
