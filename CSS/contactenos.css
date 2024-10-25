@@ -1,0 +1,179 @@
+/* Form Styles */
+.container h1 {
+  color: #038C7F;
+  text-align: center; /* Center the h1 text */
+  margin-bottom: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  width: 100%; /* Ensure the form control spans the full width */
+  max-width: 400px; /* Limit the maximum width of the form control */
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-control small {
+  color: red;
+  visibility: hidden;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: maroon;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #800000;
+}
+
+#mensajeExito {
+  color: green;
+  visibility: hidden;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Table Styles */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+}
+
+.hero {
+  background-image: url('https://images.pexels.com/photos/6069307/pexels-photo-6069307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
+
+}
+
+.hero h2 {
+  color: white;
+  font-size: 2.5em; /* Puedes ajustar el tamaño según tu preferencia */
+  margin-bottom: 10px; /* Espacio entre el h2 y el párrafo */
+  margin-top: 250px; 
+}
+
+.hero p {
+  color: rgb(56, 54, 54);
+  font-size: 1.6em; /* Ajusta el tamaño del texto del párrafo */
+  font-weight: bold;
+}
+
+/* Articles Section */
+.articles {
+  padding: 20px;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+}
+
+/* Table Styles */
+.styled-table {
+  width: 100%;
+  max-width: 600px; /* Limit the maximum width of the table */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  background: linear-gradient(120deg, #5e4c4c, #1b7758); /* Gradient background */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+}
+
+.styled-table td:first-child {
+  position: relative;
+  padding-left: 30px; /* Add space for the icon */
+}
+
+.styled-table td:first-child::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.styled-table td{
+  color: white;
+}
+
+.styled-table td a {
+  color: white;
+  text-decoration: none;
+}
+
+.styled-table td a:hover {
+  text-decoration: underline;
+}
+
+.text-message{
+  color: rgb(56, 54, 54);
+  text-align: center;
+  margin-top: 20px;
+}
