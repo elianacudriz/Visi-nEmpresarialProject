@@ -1,22 +1,39 @@
 
 /* Hero section (Logo y eslogan) */
 .hero {
-    background-image: url('https://images.pexels.com/photos/8439697/pexels-photo-8439697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
+    background-image: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px; 
 }
 
 .logo {
     width: 120px;  /* Ajusta el tamaño si es necesario */
     height: auto;
     position: absolute;
+    z-index: 2; 
+    position: relative;
     top: 10px;  /* Ajusta el espacio desde el borde superior */
     left: 10px; /* Ajusta el espacio desde el borde izquierdo */
     border-radius: 50%;
 }
 
+.titulo {
+    color: #F2E7DC;;
+    font-size: 2.5em; /* Puedes ajustar el tamaño según tu preferencia */
+    margin-bottom: 10px; /* Espacio entre el h2 y el párrafo */
+    margin-top: 250px;
+    z-index: 2; 
+    position: relative;
+}
+
 .eslogan {
-    color: maroon;
+    color: #A9D9D0;
     font-size: 1.6em; /* Ajusta el tamaño del texto del párrafo */
     font-weight: bold;
+    z-index: 2; 
+    position: relative;
 }
 
 /* Misión y Visión */
@@ -41,12 +58,12 @@ section {
 }
 
 .banner img {
-    width: 150px; /* Asegura que las imágenes sean del mismo tamaño */
-    height: 150px; /* Fuerza una altura igual al ancho para mantener la forma circular */
-    border-radius: 50%; /* Esto hace que las imágenes sean circulares */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
     margin: 0 20px;
-    object-fit: cover; /* Para asegurarse de que la imagen no se deforme dentro del círculo */
-    position: relative; /* Necesario para aplicar el degradado */
+    object-fit: cover; 
+    position: relative; 
     
     /* Para el degradado */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
@@ -122,3 +139,4 @@ section {
     margin-bottom: 10px; /* Espacio entre el h2 y el párrafo */
     margin-top: 250px; 
 }
+
