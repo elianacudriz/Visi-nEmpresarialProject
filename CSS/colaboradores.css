@@ -8,7 +8,6 @@
 .colaboradores{
     text-align: center;
     font-size: x-large;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .presentation{
@@ -19,8 +18,7 @@
 }
 
 .card-presentation{
-    background-color: #fff;
-    border: 1px solid #ddd;
+ 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
     margin: 20px;
@@ -31,10 +29,8 @@
 
 .card-presentation{
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    background-color: #fff
 }
 
 .card-presentation h3{
@@ -55,7 +51,7 @@
 }
 
 .card-presentation a{
-    color: #0077b5;
+    color: #71b8de;
     text-decoration: none;
 }
 

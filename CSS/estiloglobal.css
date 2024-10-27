@@ -1,4 +1,4 @@
-/* Estilo global */
+
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #F2E7DC;
@@ -15,27 +15,27 @@ header {
 }
 
 
-/* Barra de navegación con logo */
+
 .nav {
-    background-color: rgba(0, 128, 128, 0.5); /* Más transparente */
-    position: fixed;  /* Fija la barra en la parte superior */
+    background-color: rgba(0, 128, 128, 0.5); 
+    position: fixed;  
     top: 0;
     width: 100%;
     display: flex;
-    align-items: center; /* Alinea los elementos verticalmente */
-    padding: 10px 20px;  /* Ajusta el padding */
+    align-items: center; 
+    padding: 10px 20px;  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;  /* Coloca la barra por encima del resto del contenido */
+    z-index: 1000; 
     height: 60px;
 }
 
-/* Ajustes del logo dentro de la navegación */
+
 .logo-nav {
-    width: 110Px;  /* Tamaño del logo */
-    height: auto;  /* Mantén el aspecto proporcional del logo */
-    border-radius: 0; /* Quita el borde circular */
+    width: 110Px; 
+    height: auto;  
+    border-radius: 0; 
     margin-right: 10px;
-    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+    object-fit: contain; 
     background-color: transparent; 
 }
 .nav ul {
@@ -60,10 +60,9 @@ header {
 }
 
 .nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);  /* Efecto hover con transparencia */
-}
+    background-color: rgba(255, 255, 255, 0.2);  }
 
-/* Estilos del Footer */
+
 footer {
     background-color: #038C7F;
     color: #fff;
@@ -77,14 +76,14 @@ footer p {
 
 .hero {
 
-    background-size: cover; /* La imagen cubrirá toda la sección */
-    background-position: center; /* Centra la imagen en la sección */
-    padding: 50px; /* Añade espacio alrededor del contenido */
-    color: white; /* Cambia el color del texto a blanco */
-    text-align: center; /* Centrar el texto */
-    background-position: center top; /* Coloca la imagen centrada horizontalmente, pero anclada arriba */
+    background-size: cover; 
+    background-position: center; 
+    padding: 50px; 
+    color: white; 
+    text-align: center; 
+    background-position: center top; 
     height: 450px;
-    padding-top: 50px; /* Espacio en la parte superior */
+    padding-top: 50px; 
     padding-bottom: 100px; 
 }
 

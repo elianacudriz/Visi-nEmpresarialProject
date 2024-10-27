@@ -1,4 +1,4 @@
-/* nosotros */
+
 .nosotros{
     padding: 0;
     border-radius: 15%;
@@ -25,5 +25,28 @@
     justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.presentacion {
+    text-align: center; 
+    padding-bottom: 40px; 
+}
+
+.service-info-btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #027373;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-info-btn:hover {
+    background-color: #005f8b;
 }
 

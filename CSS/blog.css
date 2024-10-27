@@ -52,13 +52,13 @@ section#blogs {
 
 .hero h2 {
     color: white;
-    font-size: 2.5em; /* Puedes ajustar el tamaño según tu preferencia */
-    margin-bottom: 10px; /* Espacio entre el h2 y el párrafo */
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
     margin-top: 100px; 
 }
 
 .hero p {
     color: rgb(56, 54, 54);
-    font-size: 1.6em; /* Ajusta el tamaño del texto del párrafo */
+    font-size: 1.6em; 
     font-weight: bold;
 }
